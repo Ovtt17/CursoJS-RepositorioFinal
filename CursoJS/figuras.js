@@ -19,7 +19,6 @@ console.groupEnd();
 
 //Codigo del triangulo
 console.group("Triangulos");
-
 /*
 const ladoTriangulo1 = 6;
 const ladoTriangulo2 = 6;
@@ -46,6 +45,8 @@ function areaTriangulo (base, altura){
 }
 
 console.groupEnd();
+
+
 
 
 //Codigo del circulo
@@ -80,4 +81,22 @@ function areaCirculo (radio){
     return (radio * radio) *PI;
 }
 console.groupEnd();
+
+
+//Aqui interactuamos con el HTML
+
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    
+    const perimetro = perimetroCuadrado (value);
+    alert(perimetro);
+}
+function calcularAreaCuadrado(){ 
+   const input = document.getElementById("InputCuadrado");
+   const value = input.value;
+   
+   const area = areaCuadrado (value);
+   alert(area);    
+}
 
